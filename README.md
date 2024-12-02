@@ -1,4 +1,4 @@
-# Football Video Analyser: Analisando Vídeos de Futebol com Machine Learning
+# Football Video Analyser
 
 O projeto **Football Video Analyser** é um modelo de aprendizado de máquina desenvolvido para analisar vídeos de jogos de futebol. O objetivo é identificar e classificar eventos importantes, como gols, passes, faltas e a movimentação dos jogadores, em tempo real.
 
@@ -62,21 +62,17 @@ O modelo foi ajustado a partir do YOLOv8 para detectar jogadores, bola e árbitr
 
 - **Modelo Utilizado**: YOLOv8 (fine-tuned).
 - **Dataset Usado**: Football player detection Image dataset (612 imagens).
+
 - **Ferramentas**:
   - YOLOv8 (ultralytics)
   - Roboflow dataset
   - OpenCV
   - sklearn K-Means
   - pandas, numpy, matplotlib
+ 
+  ### Exemplo de funcionamento:
+   - Input
+  <video controls src="./videos/football_sample.mp4" width="600"></video>
 
-### Limitações do Modelo Atual:
-
-- O modelo ainda tem dificuldades em prever a posição dos goleiros e árbitros.
-- Em casos de sobreposição da bola com os jogadores, pode ocorrer erro na identificação do jogador ativo.
-- O modelo atribui um novo ID ao jogador quando ele sai e retorna ao quadro.
-
-### Melhorias Futuras Previstas:
-
-- Adicionar a posição do jogador no campo em formato de retângulo no HUD.
-- Melhorar a previsão de goleiros utilizando uma técnica de rejeição baseada no lado do campo.
-- Melhorar a representação e visualização dos dados.
+   - Output:
+  <video controls src="./videos/output.mp4" width="600"></video>
