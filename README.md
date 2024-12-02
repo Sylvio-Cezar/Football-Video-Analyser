@@ -63,12 +63,6 @@ O modelo foi ajustado a partir do YOLOv8 para detectar jogadores, bola e árbitr
 - **Modelo Utilizado**: YOLOv8 (fine-tuned).
 - **Dataset Usado**: Football player detection Image dataset (612 imagens).
 
-- **Ferramentas**:
-  - YOLOv8 (ultralytics)
-  - Roboflow dataset
-  - OpenCV
-  - sklearn K-Means
-  - pandas, numpy, matplotlib
  
   ### Exemplo de funcionamento:
   - [Vídeo 1: Vídeo de entrada](./videos/football_sample.mp4)
